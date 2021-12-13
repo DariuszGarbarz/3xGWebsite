@@ -1,0 +1,220 @@
+body {
+    font-family: 'Alata', sans-serif;
+    background: url(album/b1.JPG);
+    background-size: 100%;
+    background-attachment: fixed;
+    color:  white;      
+}
+
+div.container{
+    width: 1140px;
+    margin: auto; 
+    padding: 0 15px;          
+}
+div.main{
+    width:  70%;
+    float:  left;
+}
+div.aside{
+    width: 30%;
+    float:  right;
+}
+div.content{
+    overflow:  auto;
+}
+div.headcont{
+    height:  75px;
+    background-color: #80000095;
+    margin: 15px 0 15px 0;
+    overflow: auto;
+}
+header, article, aside, footer, section{
+    display: block;
+}
+article, aside{
+    background-image: linear-gradient(#80000095, #800000);
+    padding: 10px;
+}
+footer{
+     background-image: linear-gradient(#800000, #80000095);
+    padding: 10px;   
+}
+article{
+    margin-right:  15px;
+    margin-bottom:  15px;
+    text-align: justify;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+footer{
+    width: 98%;
+    margin-top: 15px;
+    margin: auto;
+    overflow: auto;
+}
+aside{
+    margin-bottom: 15px;
+}
+div.headcont img{
+    float: left;
+    max-height: 100%;
+    max-width: 10%;
+    margin: 5px 15px 5px 15px;
+    display: block;
+}
+div.fill{
+    height: 100%;
+}
+nav{
+    height: 100%;
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    height: 100%;
+    margin: 0 10px 0 0;
+}
+nav ul li{
+    float:  right;
+    margin-left: 20px;
+    height: 100%;
+}
+nav ul li a{
+    color: white;
+    text-decoration:  none;
+    text-align: right;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+nav ul li a span{
+    display: table-cell;
+    vertical-align: middle;
+}
+header{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    float: right;
+}
+div.left{
+    width: 33%;
+    float: left;
+    text-align: left;
+    
+}
+div.right{
+    width: 33%;
+    float:  left;
+    text-align: right;
+}
+div.middle{
+    text-align: center;
+    width: 34%;
+    float: left;
+}
+div.leftbot{
+    font-size: 10px;
+    float: left;
+    text-align: left;
+    
+}
+div.rightbot {
+    font-size: 10px;
+    float: right;
+    text-align: right;
+}
+.ikony{
+    width: 30px;
+    height: 30px;
+}
+div.topfot{
+    overflow: auto;
+    margin-bottom: 5px;
+}
+div.botfot{
+    overflow: auto;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-bottom-color: white;
+}
+nav ul li a *:hover{
+    color: #808080;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+
+
+  float:  left;
+  margin: 24px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #808080;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+div.kafelki{
+    width: 100%;
+    height: 240px;
+    overflow: auto;
+    margin-top: 15px;
+}
+
+.zoom {
+  display:  inline-block;
+  padding: 5px;
+  background-color: #800000;
+  transition: transform .2s; /* Animation */
+  width: 150px;
+  height: 150px;
+  margin: 28px;
+  float: left;
+  text-align: center;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom a{
+    color: white;
+    text-decoration:  none;
+    text-align: center;  
+}
+
